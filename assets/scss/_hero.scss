@@ -1,0 +1,33 @@
+.hero {
+    &__description {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px;
+        background-image: url(./images/bg.jpg);
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 50%;
+            top: 0;
+            bottom: 0;
+            background-color: var(--color-main);
+            z-index: 0;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            opacity: .5;
+            background-color: var(--color-main);
+            z-index: 0;
+        }
+    }
+}
