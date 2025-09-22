@@ -1,9 +1,22 @@
+.main {
+  background-color: var(--color-bright);
+  border-radius: 25px 25px 0 0;
+  margin: 20px;
+}
+
+.menu {
+  display: none;
+}
+
 .hero__description {
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   border-radius: 25px;
   background-image: url(./images/bg.jpg);
+  background-size: cover;
+  background-position: 0;
   overflow: hidden;
 }
 .hero__description::after {
@@ -27,6 +40,25 @@
   background-color: var(--color-main);
   z-index: 0;
 }
+.hero__wrapper {
+  padding: 10px;
+  color: var(--color-bright);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--color-grey);
+}
+
+.container {
+  margin: 20px;
+}
 
 .wrapper {
   z-index: 1;
@@ -34,4 +66,7 @@
 
 :root {
   --color-main: #30458C;
+  --color-grey: #E4E4E4;
+  --color-bright: #fff;
+  --color-dark: #000;
 }/*# sourceMappingURL=style.css.map */

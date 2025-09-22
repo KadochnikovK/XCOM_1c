@@ -3,8 +3,11 @@
         position: relative;
         display: flex;
         flex-direction: column;
+        height: 100vh;
         border-radius: 25px;
         background-image: url(./images/bg.jpg);
+        background-size: cover;
+        background-position: 0;
         overflow: hidden;
 
         &::after {
@@ -29,5 +32,10 @@
             background-color: var(--color-main);
             z-index: 0;
         }
+    }
+
+    &__wrapper {
+        padding: 10px;
+        color: var(--color-bright);
     }
 }

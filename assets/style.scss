@@ -1,4 +1,22 @@
+@import './scss/main';
+@import './scss/menu';
 @import './scss/hero';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--color-grey);
+}
+
+.container {
+    margin: 20px
+}
 
 .wrapper {
     z-index: 1;
@@ -6,4 +24,7 @@
 
 :root {
     --color-main: #30458C;
+    --color-grey: #E4E4E4;
+    --color-bright: #fff;
+    --color-dark: #000;
 }
