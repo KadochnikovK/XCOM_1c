@@ -1,30 +1,55 @@
-@import './scss/main';
-@import './scss/menu';
-@import './scss/hero';
+@import "./scss/fonts";
+@import "./scss/sizes";
+@import "./scss/main";
+@import "./scss/menu";
+@import "./scss/button";
+@import "./scss/hero";
 
-
+:root {
+    --color-main: #30458c;
+    --color-grey: #e4e4e4;
+    --color-bright: #fff;
+    --color-dark: #000;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Main, Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: var(--color-grey);
 }
 
-.container {
-    margin: 20px
+a {
+    text-decoration: none;
 }
 
+.container {
+    margin: 20px;
+}
+
+.headline {
+    font-size: 40px;
+}
+
+.paragraph {
+    font-size: 16px;
+}
+
+.mobile-only {
+    display: none;
+
+    @include sm {
+        display: flex;
+    }
+}
 .wrapper {
     z-index: 1;
-}
+    display: flex;
 
-:root {
-    --color-main: #30458C;
-    --color-grey: #E4E4E4;
-    --color-bright: #fff;
-    --color-dark: #000;
+    &--column {
+        flex-direction: column;
+    }
 }

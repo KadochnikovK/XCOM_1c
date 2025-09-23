@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Персональные данные</title>
-    <link rel="stylesheet" href="assets/style.css">
-</head>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
 
-<body>
+  <body>
     <main class="main">
-        <section class="hero container">
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item"><a class="btn btn--second" href="#"></a></li>
-                    <li class="menu__item"><a class="btn btn--second" href="#"></a></li>
-                    <li class="menu__item"><a class="btn btn--second" href="#"></a></li>
-                    <li class="menu__item"><a class="btn btn--third" href="#"></a></li>
-                </ul>
-            </nav>
-            <div class="logo">
-                <img src="logo-1" alt="XCOM">
-                <img src="logo-2" alt="1C">
+      <section class="hero container">
+        <div class="wrapper">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="button button--second" href="#"></a></li>
+              <li class="menu__item"><a class="button button--second" href="#"></a></li>
+              <li class="menu__item"><a class="button button--second" href="#"></a></li>
+              <li class="menu__item"><a class="button button--third" href="#"></a></li>
+            </ul>
+          </nav>
+          <div class="logo">
+            <img src="./assets/images/logo-1.svg" alt="XCOM" />
+            <img src="./assets/images/logo-2.svg" alt="1C" />
+          </div>
+          <a class="button button--third mobile-only" href="#">Регистрация</a>
+        </div>
+        <div class="hero__description">
+          <div class="wrapper wrapper--column hero__wrapper">
+            <div class="unite hero__title">
+              <h1 class="hero__headline headline">Персональные данные:</h1>
+              <p class="hero__paragraph paragraph">красные флаги и скрытые риски при соблюдении требований 152-ФЗ «О персональных данных»</p>
             </div>
-            <a class="btn btn--third" href="#">Регистрация</a>
-            <div class="hero__description">
-                <div class="wrapper hero__wrapper">
-                    <h1 class="hero__headline">Персональные данные:</h1>
-                    <p class="hero__paragraph">красные флаги и скрытые риски при соблюдении требований 152-ФЗ
-                        «О персональных данных»</p>
-                    <p class="hero__paragraph">09 октября 2025 года, 11:00</p>
-                    <a class="btn--primary" href="#">Зарегистрироваться</a>
-                </div>
-            </div>
-        </section>
+
+            <p class="hero__paragraph paragraph">09 октября 2025 года, 11:00</p>
+            <a class="button button--primary" href="#">
+              Зарегистрироваться
+              <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.29577 28.5L23.3803 2.5M23.3803 2.5L2 6.12025M23.3803 2.5L25 22.9051" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-
-    </footer>
+    <footer class="footer"></footer>
     <script src="assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>

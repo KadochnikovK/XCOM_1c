@@ -1,0 +1,29 @@
+.button {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 10pc;
+    color: var(--color-dark);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1rem 2rem;
+    width: max-content;
+    transition: 0.3s;
+
+    &--primary {
+        background-color: var(--color-bright);
+        color: var(--color-main);
+
+        &:hover {
+            background-color: var(--color-dark);
+            color: var(--color-bright);
+        }
+    }
+
+    &--second {
+        background-color: var(--color-grey);
+    }
+
+    &--third {
+        border: 1px solid var(--color-bright);
+    }
+}

@@ -1,3 +1,54 @@
+@charset "UTF-8";
+/* Font-face подключения в вашем стиле */
+@font-face {
+  font-family: "Main";
+  src: url("fonts/Montserrat-SemiBold.ttf") format("truetype"), url("fonts/Montserrat-SemiBold.woff") format("woff"), url("fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Main";
+  src: url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Main";
+  src: url("fonts/Montserrat-Light.ttf") format("truetype"), url("fonts/Montserrat-Light.woff") format("woff"), url("fonts/Montserrat-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Main";
+  src: url("fonts/Montserrat-ExtraLight.ttf") format("truetype"), url("fonts/Montserrat-ExtraLight.woff") format("woff"), url("fonts/Montserrat-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Main";
+  src: url("fonts/Montserrat-Medium.ttf") format("truetype"), url("fonts/Montserrat-Medium.woff") format("woff"), url("fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Second";
+  src: url("fonts/Roboto-Medium.ttf") format("truetype"), url("fonts/Roboto-Medium.woff") format("woff"), url("fonts/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Second";
+  src: url("fonts/Roboto-Regular.ttf") format("truetype"), url("fonts/Roboto-Regular.woff") format("woff"), url("fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 .main {
   background-color: var(--color-bright);
   border-radius: 25px 25px 0 0;
@@ -6,6 +57,33 @@
 
 .menu {
   display: none;
+}
+
+.button {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 10pc;
+  color: var(--color-dark);
+  background-color: rgba(0, 0, 0, 0);
+  padding: 1rem 2rem;
+  width: -moz-max-content;
+  width: max-content;
+  transition: 0.3s;
+}
+.button--primary {
+  background-color: var(--color-bright);
+  color: var(--color-main);
+}
+.button--primary:hover {
+  background-color: var(--color-dark);
+  color: var(--color-bright);
+}
+.button--second {
+  background-color: var(--color-grey);
+}
+.button--third {
+  border: 1px solid var(--color-bright);
 }
 
 .hero__description {
@@ -43,30 +121,60 @@
 .hero__wrapper {
   padding: 10px;
   color: var(--color-bright);
+  height: 100%;
+}
+.hero__title {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+:root {
+  --color-main: #30458c;
+  --color-grey: #e4e4e4;
+  --color-bright: #fff;
+  --color-dark: #000;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Main, Arial, Helvetica, sans-serif;
 }
 
 body {
   background-color: var(--color-grey);
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   margin: 20px;
 }
 
-.wrapper {
-  z-index: 1;
+.headline {
+  font-size: 40px;
 }
 
-:root {
-  --color-main: #30458C;
-  --color-grey: #E4E4E4;
-  --color-bright: #fff;
-  --color-dark: #000;
-}/*# sourceMappingURL=style.css.map */
+.paragraph {
+  font-size: 16px;
+}
+
+.mobile-only {
+  display: none;
+}
+@media (min-width: 768px) {
+  .mobile-only {
+    display: flex;
+  }
+}
+
+.wrapper {
+  z-index: 1;
+  display: flex;
+}
+.wrapper--column {
+  flex-direction: column;
+}
