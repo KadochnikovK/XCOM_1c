@@ -59,6 +59,11 @@
   display: none;
 }
 
+.logo {
+  display: flex;
+  gap: var(--size-sm);
+}
+
 .button {
   display: flex;
   gap: 1rem;
@@ -122,6 +127,7 @@
   padding: 10px;
   color: var(--color-bright);
   height: 100%;
+  z-index: 1;
 }
 .hero__title {
   margin-top: auto;
@@ -133,6 +139,13 @@
   --color-grey: #e4e4e4;
   --color-bright: #fff;
   --color-dark: #000;
+  --size-xs: 12px;
+  --size-sm: 16px;
+  --size-md: 24px;
+  --size-lg: 32px;
+  --size-xl: 48px;
+  --size-xxl: 64px;
+  --size-xxxl: 96px;
 }
 
 * {
@@ -173,8 +186,12 @@ a {
 
 .wrapper {
   z-index: 1;
-  display: flex;
 }
-.wrapper--column {
+
+.unite {
+  display: flex;
+  gap: var(--size-sm);
+}
+.unite--column {
   flex-direction: column;
 }

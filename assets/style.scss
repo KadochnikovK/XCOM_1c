@@ -1,15 +1,26 @@
 @import "./scss/fonts";
-@import "./scss/sizes";
+@import "./scss/media";
 @import "./scss/main";
 @import "./scss/menu";
+@import "./scss/logo";
 @import "./scss/button";
 @import "./scss/hero";
 
 :root {
+    // colors
     --color-main: #30458c;
     --color-grey: #e4e4e4;
     --color-bright: #fff;
     --color-dark: #000;
+
+    // sizes
+    --size-xs: 12px;
+    --size-sm: 16px;
+    --size-md: 24px;
+    --size-lg: 32px;
+    --size-xl: 48px;
+    --size-xxl: 64px;
+    --size-xxxl: 96px;
 }
 * {
     margin: 0;
@@ -47,7 +58,11 @@ a {
 }
 .wrapper {
     z-index: 1;
+}
+
+.unite {
     display: flex;
+    gap: var(--size-sm);
 
     &--column {
         flex-direction: column;
