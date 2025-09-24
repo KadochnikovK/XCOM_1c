@@ -59,14 +59,14 @@
                 content: '✕';
                 position: absolute;
                 right: 10px;
-                bottom: -2px;
+                bottom: -12px;
                 transform: translateY(-50%);
                 color: var(--color-red);
                 font-size: 24px;
                 font-weight: 600;
 
                 @media(min-width: 640px) {
-                    bottom: 10px;
+                    bottom: -8px;
                     right: 16px;
                 }
 
@@ -74,7 +74,7 @@
                 @media(min-width: 1200px) {
                     font-size: 28px;
                     right: 24px;
-                    bottom: 16px;
+                    bottom: -12px;
                 }
             }
         }

@@ -748,7 +748,7 @@ button {
   content: "✕";
   position: absolute;
   right: 10px;
-  bottom: -2px;
+  bottom: -12px;
   transform: translateY(-50%);
   color: var(--color-red);
   font-size: 24px;
@@ -756,7 +756,7 @@ button {
 }
 @media (min-width: 640px) {
   .form__item--not-valid:not(.form__item--checkbox)::after {
-    bottom: 10px;
+    bottom: -8px;
     right: 16px;
   }
 }
@@ -764,7 +764,7 @@ button {
   .form__item--not-valid:not(.form__item--checkbox)::after {
     font-size: 28px;
     right: 24px;
-    bottom: 16px;
+    bottom: -12px;
   }
 }
 .form__item--focused .form__label {
