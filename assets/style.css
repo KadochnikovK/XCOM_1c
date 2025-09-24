@@ -153,6 +153,15 @@ li {
   }
 }
 
+.before-lg-only {
+  display: flex !important;
+}
+@media (min-width: 1224px) {
+  .before-lg-only {
+    display: none !important;
+  }
+}
+
 .wrapper {
   z-index: 1;
 }

@@ -62,6 +62,14 @@ li {
     }
 }
 
+.before-lg-only {
+    display: flex !important;
+
+    @include lg {
+        display: none !important;
+    }
+}
+
 .wrapper {
     z-index: 1;
 }
