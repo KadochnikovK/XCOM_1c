@@ -89,7 +89,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   font-family: Main, Arial, Helvetica, sans-serif;
   font-weight: 400;
   text-wrap: wrap;
@@ -695,8 +695,8 @@ button {
   flex-direction: column;
 }
 .form__button {
-  margin-left: auto;
   margin-top: var(--size-xs);
+  margin-left: auto;
 }
 .form__wrapper {
   display: flex;

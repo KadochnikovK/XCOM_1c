@@ -5,8 +5,13 @@
     // background-color: red;
 
     &__button {
-        margin-left: auto;
+
+
         margin-top: var(--size-xs);
+
+        // @include sm {
+        margin-left: auto;
+        // }
     }
 
     &__wrapper {
