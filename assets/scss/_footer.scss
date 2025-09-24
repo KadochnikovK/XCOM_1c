@@ -99,6 +99,7 @@
         gap: var(--size-xs);
         font-size: var(--size-sm); // 20px mobile
 
+
         a,
         span {
             color: var(--color-white);
@@ -106,6 +107,7 @@
             transition: opacity 0.3s;
             line-height: 1.2;
             font-size: var(--size-sm); // 20px mobile
+            font-weight: 200;
         }
 
         a:hover {

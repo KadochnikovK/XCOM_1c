@@ -597,7 +597,6 @@ button {
   aspect-ratio: 1;
   z-index: 0;
   transform: rotate(-15deg);
-  /* Rectangle 6 */
   box-shadow: var(--size-xs) 4px 4px rgba(0, 0, 0, 0.25);
 }
 .speaker__background::before {
@@ -966,6 +965,7 @@ button {
   transition: opacity 0.3s;
   line-height: 1.2;
   font-size: var(--size-sm);
+  font-weight: 200;
 }
 .footer__text a:hover {
   opacity: 0.8;
