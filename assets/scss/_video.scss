@@ -4,8 +4,12 @@
     &__content {
         border-radius: 25px;
         padding: var(--size-sm);
-        height: 400px;
+        height: 60vh;
         background-color: var(--color-main);
+
+        @include md {
+            border-radius: 50px;
+        }
     }
 
     &__headline {

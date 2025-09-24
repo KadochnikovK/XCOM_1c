@@ -4,5 +4,9 @@
     margin: 20px;
     margin-bottom: 0;
     padding-bottom: 1px;
-    overflow: hidden;
+    overflow-x: hidden;
+
+    @include md {
+        border-radius: 50px 50px 0 0;
+    }
 }

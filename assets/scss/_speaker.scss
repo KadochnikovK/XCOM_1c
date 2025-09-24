@@ -1,8 +1,6 @@
 .speaker {
     position: relative;
 
-
-
     &__content {
         position: relative;
         display: flex;
@@ -11,6 +9,11 @@
         aspect-ratio: 1;
         padding: 0 20vw;
         transform: translateY(-5%);
+        max-width: 1200px;
+
+        @include xl {
+            padding: 0 15vw 0 20vw;
+        }
     }
 
     &__line {
@@ -20,6 +23,22 @@
         top: -20vw;
         width: 140%;
         z-index: 0;
+
+        &--bottom {
+            left: auto;
+            right: 0;
+            top: auto;
+            bottom: 0;
+            width: 45%;
+        }
+
+        &--top {
+            left: 0;
+            right: auto;
+            top: -40%;
+            bottom: auto;
+            width: 60%;
+        }
     }
 
 
@@ -27,19 +46,29 @@
         color: var(--color-main);
         font-size: var(--size-xs);
         width: 80%;
+
+        @include sm {
+            font-size: var(--size-md);
+
+        }
+
+        @include xl {
+            width: 95%;
+        }
     }
 
     &__background {
         border-radius: 50px;
         background-color: var(--color-main);
         position: absolute;
-        left: 50%;
+        left: 15%;
 
-        top: 0;
+        top: 12%;
         width: 75%;
+        max-width: 800px;
         aspect-ratio: 1;
         z-index: 0;
-        transform: rotate(-15deg) translateX(-50%);
+        transform: rotate(-15deg);
 
         &::before {
             content: '';
@@ -49,7 +78,7 @@
             left: 0;
             right: 0;
             top: 0;
-            width: 100%;
+            width: 95%;
             aspect-ratio: 1;
             z-index: 0;
             transform: rotate(-15deg);
@@ -62,6 +91,16 @@
         right: -7vw;
         width: 50vw;
         bottom: 0;
+
+        @include lg {
+            bottom: 7%;
+            right: -3vw;
+        }
+
+        @include xl {
+            bottom: 8.5%;
+            right: -3vw;
+        }
     }
 
 }

@@ -4,13 +4,15 @@
     --color-grey: #e4e4e4;
     --color-bright: #fff;
     --color-dark: #000;
+    --color-red: #000;
 
     // sizes
-    --size-xs: 12px;
-    --size-sm: 16px;
-    --size-md: 24px;
-    --size-lg: 32px;
-    --size-xl: 48px;
-    --size-xxl: 64px;
-    --size-xxxl: 96px;
+    --size-xxxs: calc((1vw + 1vh) * .6);
+    --size-xs: calc((1vw + 1vh) * .8);
+    --size-sm: calc((1vw + 1vh) * 1);
+    --size-md: calc((1vw + 1vh) * 1.5);
+    --size-lg: calc((1vw + 1vh) * 2);
+    --size-xl: calc((1vw + 1vh) * 3);
+    --size-xxl: calc((1vw + 1vh) * 5);
+    --size-xxxl: calc((1vw + 1vh) * 10);
 }

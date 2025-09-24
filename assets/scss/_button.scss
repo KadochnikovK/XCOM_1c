@@ -1,5 +1,12 @@
+button {
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+}
+
 .button {
     display: flex;
+    position: relative;
     gap: 1rem;
     align-items: center;
     justify-content: center;
@@ -9,6 +16,7 @@
     padding: 1rem 2rem;
     width: max-content;
     transition: 0.3s;
+    font-size: var(--size-sm);
 
     &--primary {
         background-color: var(--color-bright);
@@ -28,15 +36,36 @@
 
     &--second {
         background-color: var(--color-grey);
+
+        &:hover {
+            background-color: var(--color-main);
+            color: var(--color-bright);
+
+            &::before {
+                content: '•';
+                position: absolute;
+                left: var(--size-xs);
+            }
+        }
     }
 
     &--third {
         border: 1px solid var(--color-bright);
         color: var(--color-bright);
 
+        &:hover {
+            border-color: var(--color-dark);
+            color: var(--color-dark);
+        }
+
         @include sm {
             border: 1px solid var(--color-dark);
             color: var(--color-dark);
+
+            &:hover {
+                border-color: var(--color-main);
+                color: var(--color-main);
+            }
         }
     }
 }

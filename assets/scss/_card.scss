@@ -6,9 +6,15 @@
     aspect-ratio: 1;
     padding: var(--size-sm);
     color: var(--color-main);
+    max-height: 800px;
+    width: 100%;
 
     @include xs {
-        aspect-ratio: auto;
+        aspect-ratio: .5;
+    }
+
+    @include md {
+        border-radius: 50px;
     }
 
     &--image {
@@ -30,13 +36,14 @@
 
 
     &__number {
-        font-size: 108px;
+        font-size: var(--size-xxxl);
         font-weight: 800;
-        line-height: 1;
+        line-height: .8;
         margin-left: auto;
     }
 
     &__text {
+        font-size: var(--size-sm);
         margin-top: auto;
 
         @include xs {

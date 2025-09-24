@@ -5,27 +5,37 @@
     font-family: Main, Arial, Helvetica, sans-serif;
     font-weight: 400;
     text-wrap: wrap;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--color-grey);
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
 }
 
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
 .container {
-    margin: 20px;
+    margin: var(--size-sm);
 }
 
 .headline {
-    font-size: 40px;
+    font-size: var(--size-xl);
     color: var(--color-main);
+    line-height: 1;
+    padding-top: var(--size-md);
+    padding-bottom: var(--size-xs);
 }
 
 .paragraph {
-    font-size: 16px;
+    font-size: var(--size-sm);
 }
 
 .mobile-only {
@@ -40,6 +50,14 @@ a {
     display: none !important;
 
     @include sm {
+        display: flex !important;
+    }
+}
+
+.lg-only {
+    display: none !important;
+
+    @include lg {
         display: flex !important;
     }
 }
@@ -62,5 +80,13 @@ a {
 }
 
 .upper {
-    z-index: 1;
+    z-index: 1 !important;
+}
+
+.upper-2 {
+    z-index: 2 !important;
+}
+
+.w100 {
+    width: 100% !important;
 }

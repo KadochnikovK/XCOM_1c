@@ -1,12 +1,128 @@
 .hero {
+    display: grid;
+    gap: var(--size-xs);
+    grid-template-areas: "menu logos button"
+        "menu description description";
+
+    @include lg {
+        grid-template-areas:
+            "menu logos button"
+            "description description description";
+    }
+
+    &__button {
+        @include sm {
+            margin-bottom: auto;
+        }
+    }
+
+    &__menu {
+
+        grid-area: menu;
+        position: absolute;
+        display: flex;
+        top: 80vh;
+        transform: translateY(-50%) translateX(510%) rotate(7deg);
+        flex-direction: column;
+        gap: var(--size-sm);
+        transition: all 0.3s ease;
+        z-index: 8;
 
 
+        &--active {
+            display: block;
+            transform: translateY(-50%) translateX(15%) rotate(0deg);
+        }
+
+        @include sm {
+            position: static;
+            transform: none;
+
+        }
+
+
+    }
+
+    &__main-image {
+        display: none;
+
+        @include lg {
+            display: block;
+            height: 100%;
+            background: url(./images/bg.jpg);
+            background-size: cover;
+            border-radius: 25px;
+        }
+    }
 
     &__description {
         position: relative;
-        display: flex;
-        flex-direction: column;
         height: 90vh;
+        grid-area: description;
+        display: flex;
+
+        gap: var(--size-xs);
+
+        &-item {
+            width: 100%;
+
+            @include lg {
+                width: 50%;
+            }
+        }
+
+        @include sm {}
+
+        @include md {
+            border-radius: 50px;
+        }
+
+
+    }
+
+    &__logos {
+        display: flex;
+        gap: var(--size-xs);
+        width: 100%;
+        grid-area: logos;
+
+        @include sm {
+            justify-content: center;
+        }
+
+    }
+
+    &__top-button {
+        grid-area: button;
+        justify-content: end;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        @include sm {
+            padding: 0 var(--size-xs);
+            border-radius: 10pc;
+            background-color: var(--color-grey);
+            height: 100%;
+
+        }
+
+        // img {
+        //     width: 100%;
+        //     height: 100%;
+        // }
+    }
+
+    &__wrapper {
+        padding: var(--size-xs);
+        color: var(--color-bright);
+
+        position: relative;
         border-radius: 25px;
         background-image: url(./images/bg.jpg);
         background-size: cover;
@@ -22,6 +138,10 @@
             bottom: 0;
             background-color: var(--color-main);
             z-index: 0;
+
+            @include sm {
+                right: 0;
+            }
         }
 
         &::before {
@@ -37,10 +157,16 @@
         }
     }
 
-    &__wrapper {
-        padding: 10px;
-        color: var(--color-bright);
+    &__content {
+        display: flex;
+        flex-direction: column;
         height: 100%;
+        gap: var(--size-xs);
+        transition: .3s all;
+
+        &--hidden {
+            transform: rotate(-7deg) translateX(-130%);
+        }
     }
 
     &__title {
@@ -50,5 +176,50 @@
 
     &__headline {
         color: var(--color-bright);
+    }
+
+    &__hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 40px;
+        height: 24px;
+        cursor: pointer;
+        z-index: 10;
+        position: relative;
+        margin-left: auto;
+        background: transparent;
+        border: none;
+        padding: 0;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-main);
+            transition: all 0.3s ease;
+            transform-origin: center;
+
+            &:first-child {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            &:last-child {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+
+        &.active {
+            span {
+                &:first-child {
+                    transform: translateY(11px) rotate(45deg);
+                }
+
+                &:last-child {
+                    transform: translateY(-11px) rotate(-45deg);
+                }
+            }
+        }
     }
 }
