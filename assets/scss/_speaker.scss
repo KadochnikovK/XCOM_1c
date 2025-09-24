@@ -44,7 +44,7 @@
 
     &__paragraph {
         color: var(--color-main);
-        font-size: var(--size-xs);
+        font-size: var(--size-sm);
         width: 80%;
 
         @include sm {
