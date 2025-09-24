@@ -47,7 +47,8 @@
         margin-top: auto;
 
         @include xs {
-            padding-top: 100pxs;
+            // padding-top: 100px;
+            font-size: var(--size-sm);
         }
     }
 }
