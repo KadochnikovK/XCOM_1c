@@ -1,50 +1,187 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Персональные данные</title>
     <link rel="stylesheet" href="assets/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <main class="main">
-      <section class="hero container">
-        <div class="unite">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item"><a class="button button--second" href="#"></a></li>
-              <li class="menu__item"><a class="button button--second" href="#"></a></li>
-              <li class="menu__item"><a class="button button--second" href="#"></a></li>
-              <li class="menu__item"><a class="button button--third" href="#"></a></li>
-            </ul>
-          </nav>
-          <div class="logo">
-            <img src="./assets/images/logo-1.svg" alt="XCOM" />
-            <img src="./assets/images/logo-2.svg" alt="1C" />
-          </div>
-          <a class="button button--third mobile-only" href="#">Регистрация</a>
-        </div>
-        <div class="hero__description">
-          <div class="unite unite--column hero__wrapper">
-            <div class="unite unite--column hero__title">
-              <h1 class="hero__headline headline">Персональные данные:</h1>
-              <p class="hero__paragraph paragraph">красные флаги и скрытые риски при соблюдении требований 152-ФЗ «О персональных данных»</p>
+        <section class="hero container">
+            <div class="unite hero__wrapper">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="button button--second" href="#"></a></li>
+                        <li class="menu__item"><a class="button button--second" href="#"></a></li>
+                        <li class="menu__item"><a class="button button--second" href="#"></a></li>
+                        <li class="menu__item"><a class="button button--third" href="#"></a></li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <img src="./assets/images/logo-1.svg" alt="XCOM" />
+                    <img src="./assets/images/logo-2.svg" alt="1C" />
+                </div>
+                <a class="button button--third tablet-only" href="#">Регистрация</a>
+            </div>
+            <div class="hero__description">
+                <div class="unite unite--column hero__wrapper upper">
+                    <div class="unite unite--column hero__title">
+                        <h1 class="hero__headline headline">Персональные данные:</h1>
+                        <p class="hero__paragraph paragraph">красные флаги и скрытые риски при соблюдении требований
+                            152-ФЗ «О персональных данных»</p>
+                    </div>
+
+                    <p class="hero__paragraph paragraph extra-bold">09 октября 2025 года, 11:00</p>
+                    <a class="button button--primary" href="#">
+                        Зарегистрироваться
+                        <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.29577 28.5L23.3803 2.5M23.3803 2.5L2 6.12025M23.3803 2.5L25 22.9051"
+                                stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="container bullets upper">
+            <h2 class="headline">Тезисы:</h2>
+            <div class="bullets__list">
+                <div class="bullets__item card card--color">
+                    <span class="card__number">1</span>
+                    <p class="card__text">Определим процессы работы
+                        с персональными данными, которые несут финансовые
+                        и репутационные риски</p>
+                </div>
+                <div class="bullets__item  card card--image" style="--image-url: url(./images/bg-2-1.jpg);">
+                    <span class="card__number">2</span>
+                    <p class="card__text">Обсудим, какие нарушения видны регулятору невооруженным взглядом</p>
+                </div>
+                <div class="bullets__item card">
+                    <span class="card__number">3</span>
+                    <p class="card__text">Поговорим
+                        об изменениях в требованиях
+                        к согласиям на обработку персональных данных</p>
+                </div>
+                <div class="bullets__item card card--image" style="--image-url: url(./images/bg-2-2.jpg);">
+                    <span class="card__number">4</span>
+                    <p class="card__text">Познакомимся
+                        с инструментом, который помогает автоматизировать исполнение требований 152-ФЗ «О персональных
+                        данных»</p>
+                </div>
+            </div>
+        </section>
+        <section class="speaker">
+            <img class="speaker__line" src="assets/images/line.svg" alt="">
+            <div class="speaker__content upper">
+                <h2 class="headline">Спикер</h2>
+                <p class="speaker__paragraph">Глотова Татьяна специалист по персональным данным 1Софт (Фирма 1С)</p>
+            </div>
+            <div class="speaker__background"></div>
+            <img class="speaker__image" src="assets/images/speaker.png" alt="">
+        </section>
+        <section class="container video">
+            <div class="video__content">
+                <h2 class="video__headline headline mobile-only">Запись вебинара:</h2>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container" id="contacts">
+        <div class="footer__content content">
+            <a href="https://www.xcom.ru/" class="footer__logo logo">
+                <img class="logo__img footer__logo-img" src="./assets/images/logo-white.svg" alt="XCOM" />
+            </a>
+
+            <div class="footer__links">
+                <div class="footer__item">
+                    <p class="footer__label">О компании</p>
+                    <div class="footer__text">
+                        <a href="#">История</a>
+                        <a href="#">О компании</a>
+                        <a href="#">About us</a>
+                        <a href="#">Вакансии</a>
+                        <a href="#">Акции</a>
+                        <a href="#">Бизнес-акселератор X-Com</a>
+                        <a href="#">Проекты</a>
+                        <a href="#">Пресс-центр</a>
+                        <a href="#">Статьи об импортозамещении</a>
+                    </div>
+                </div>
             </div>
 
-            <p class="hero__paragraph paragraph">09 октября 2025 года, 11:00</p>
-            <a class="button button--primary" href="#">
-              Зарегистрироваться
-              <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.29577 28.5L23.3803 2.5M23.3803 2.5L2 6.12025M23.3803 2.5L25 22.9051" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
-              </svg>
-            </a>
-          </div>
+            <div class="footer__links">
+                <div class="footer__item">
+                    <p class="footer__label">Системная интеграция</p>
+                    <div class="footer__text">
+                        <a href="#">Монтаж и пусконакладка серверов</a>
+                        <a href="#">Построение СХД и внедрение NAS-массивов под ключ</a>
+                        <a href="#">Внедрение программного обеспечения под ключ</a>
+                        <a href="#">Внедрение и сервис сетевого оборудования</a>
+                        <a href="#">Внедрение офисных IP-ATC</a>
+                        <a href="#">Оснащение и сервис рабочих мест</a>
+                        <a href="#">Внедрение систем корпоративной печати</a>
+                        <a href="#">Построение инженерных инфраструктур</a>
+                        <a href="#">Внедрение и сервис систем безопасности</a>
+                        <a href="#">Расчет, поставка, монтаж и обслуживание кабеленесущих систем</a>
+                        <a href="#">Аутсорсинг информационной безопасности</a>
+                        <a href="#">Мультимедийные решения для корпоративных коммуникаций</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <div class="footer__item">
+                    <p class="footer__label">Мероприятия</p>
+                    <div class="footer__text">
+                        <p class="footer__sub-label">2024</p>
+                        <a href="#">Вебинар X-Com и Катюша</a>
+                        <a href="#">Вебинар Видеорегистраторы TRASSIR</a>
+                        <a href="#">Бизнес-ужин X-Com совместно с IRBIS, Systeme Electric, IDS</a>
+                        <a href="#">ИТ-конференция X-Com "Energy Day"</a>
+                        <a href="#">Конференция "Здрав IT"</a>
+                        <a href="#">Вебинар "Печать без границ: новый уровень экономии и качества"</a>
+                        <a href="#">Демо-день конкурса "Беспилотники: поможем взлететь Вашему бизнесу"</a>
+
+                        <p class="footer__sub-label">2025</p>
+                        <a href="#">Конференция "Цифровизация науки и образования"</a>
+                        <a href="#">Вебинар "Обзор печатной техники российского производителя"</a>
+                        <a href="#">Конференция "Интеграторы систем безопасности"</a>
+                        <a href="#">Конференция "Pro-AV"</a>
+                        <a href="#">Вебинар "Пилотные проекты российского софта"</a>
+                        <a href="#">Конференция "Системы безопасности"</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__contacts">
+                <div class="footer__item">
+                    <p class="footer__label">Контакты</p>
+                    <div class="footer__text">
+                        <span>+7 (495) 223-63-39 (Москва)</span>
+                        <span>+7 (812) 740-11-20 (Санкт-Петербург)</span>
+                        <span>Электронная почта: om@xcom.ru</span>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <div class="footer__icons">
+                        <a href="#"><img src="./assets/images/tg.svg" alt="Telegram" /></a>
+                        <a href="#"><img src="./assets/images/vk.svg" alt="VK" /></a>
+                        <a href="#"><img src="./assets/images/mail.svg" alt="Mail" /></a>
+                    </div>
+                    <a href="#" class="footer__link">Политика конфиденциальности</a>
+                </div>
+            </div>
+
+            <div class="footer__copy">
+                <p class="footer__copy-text">Использование материалов, размещенных на сайте, допускается только с
+                    письменного
+                    разрешения «ООО М-ИНВЕСТ»</p>
+                <p class="footer__copy-text">2025 © «ООО М-ИНВЕСТ». Все права защищены.</p>
+            </div>
         </div>
-      </section>
-      <section class="container"></section>
-    </main>
-    <footer class="footer"></footer>
+    </footer>
     <script src="assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>

@@ -1,70 +1,14 @@
 @import "./scss/fonts";
 @import "./scss/media";
+@import "./scss/root";
+@import "./scss/common";
 @import "./scss/main";
 @import "./scss/menu";
 @import "./scss/logo";
 @import "./scss/button";
 @import "./scss/hero";
-
-:root {
-    // colors
-    --color-main: #30458c;
-    --color-grey: #e4e4e4;
-    --color-bright: #fff;
-    --color-dark: #000;
-
-    // sizes
-    --size-xs: 12px;
-    --size-sm: 16px;
-    --size-md: 24px;
-    --size-lg: 32px;
-    --size-xl: 48px;
-    --size-xxl: 64px;
-    --size-xxxl: 96px;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Main, Arial, Helvetica, sans-serif;
-}
-
-body {
-    background-color: var(--color-grey);
-}
-
-a {
-    text-decoration: none;
-}
-
-.container {
-    margin: 20px;
-}
-
-.headline {
-    font-size: 40px;
-}
-
-.paragraph {
-    font-size: 16px;
-}
-
-.mobile-only {
-    display: none;
-
-    @include sm {
-        display: flex;
-    }
-}
-.wrapper {
-    z-index: 1;
-}
-
-.unite {
-    display: flex;
-    gap: var(--size-sm);
-
-    &--column {
-        flex-direction: column;
-    }
-}
+@import "./scss/bullets";
+@import "./scss/speaker";
+@import "./scss/card";
+@import "./scss/video";
+@import "./scss/footer";

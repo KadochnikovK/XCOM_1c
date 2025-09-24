@@ -1,9 +1,30 @@
 /* Font-face подключения в вашем стиле */
+
 @font-face {
     font-family: 'Main';
-    src: url('fonts/Montserrat-SemiBold.ttf') format('truetype'),
-        url('fonts/Montserrat-SemiBold.woff') format('woff'),
-        url('fonts/Montserrat-SemiBold.woff2') format('woff2');
+    src: url('fonts/Manrope-ExtraBold.ttf') format('truetype'),
+        url('fonts/Manrope-ExtraBold.woff') format('woff'),
+        url('fonts/Manrope-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Main';
+    src: url('fonts/Manrope-Bold.ttf') format('truetype'),
+        url('fonts/Manrope-Bold.woff') format('woff'),
+        url('fonts/Manrope-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Main';
+    src: url('fonts/Manrope-Semibold.ttf') format('truetype'),
+        url('fonts/Manrope-Semibold.woff') format('woff'),
+        url('fonts/Manrope-Semibold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -11,9 +32,19 @@
 
 @font-face {
     font-family: 'Main';
-    src: url('fonts/Montserrat-Regular.ttf') format('truetype'),
-        url('fonts/Montserrat-Regular.woff') format('woff'),
-        url('fonts/Montserrat-Regular.woff2') format('woff2');
+    src: url('fonts/Manrope-Medium.ttf') format('truetype'),
+        url('fonts/Manrope-Medium.woff') format('woff'),
+        url('fonts/Manrope-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Main';
+    src: url('fonts/Manrope-Regular.ttf') format('truetype'),
+        url('fonts/Manrope-Regular.woff') format('woff'),
+        url('fonts/Manrope-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -21,9 +52,9 @@
 
 @font-face {
     font-family: 'Main';
-    src: url('fonts/Montserrat-Light.ttf') format('truetype'),
-        url('fonts/Montserrat-Light.woff') format('woff'),
-        url('fonts/Montserrat-Light.woff2') format('woff2');
+    src: url('fonts/Manrope-Light.ttf') format('truetype'),
+        url('fonts/Manrope-Light.woff') format('woff'),
+        url('fonts/Manrope-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -31,9 +62,9 @@
 
 @font-face {
     font-family: 'Main';
-    src: url('fonts/Montserrat-ExtraLight.ttf') format('truetype'),
-        url('fonts/Montserrat-ExtraLight.woff') format('woff'),
-        url('fonts/Montserrat-ExtraLight.woff2') format('woff2');
+    src: url('fonts/Manrope-Thin.ttf') format('truetype'),
+        url('fonts/Manrope-Thin.woff') format('woff'),
+        url('fonts/Manrope-Thin.woff2') format('woff2');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -41,9 +72,9 @@
 
 @font-face {
     font-family: 'Main';
-    src: url('fonts/Montserrat-Medium.ttf') format('truetype'),
-        url('fonts/Montserrat-Medium.woff') format('woff'),
-        url('fonts/Montserrat-Medium.woff2') format('woff2');
+    src: url('fonts/Manrope-Medium.ttf') format('truetype'),
+        url('fonts/Manrope-Medium.woff') format('woff'),
+        url('fonts/Manrope-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;

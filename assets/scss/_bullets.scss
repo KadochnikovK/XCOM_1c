@@ -1,0 +1,16 @@
+.bullets {
+    position: relative;
+
+    &__list {
+        display: grid;
+        gap: var(--size-sm);
+
+        @include xs {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include lg {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

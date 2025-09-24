@@ -1,9 +1,12 @@
 .hero {
+
+
+
     &__description {
         position: relative;
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 90vh;
         border-radius: 25px;
         background-image: url(./images/bg.jpg);
         background-size: cover;
@@ -38,11 +41,14 @@
         padding: 10px;
         color: var(--color-bright);
         height: 100%;
-        z-index: 1;
     }
 
     &__title {
         margin-top: auto;
         margin-bottom: auto;
+    }
+
+    &__headline {
+        color: var(--color-bright);
     }
 }

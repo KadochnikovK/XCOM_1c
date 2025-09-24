@@ -1,0 +1,67 @@
+.speaker {
+    position: relative;
+
+
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        aspect-ratio: 1;
+        padding: 0 20vw;
+        transform: translateY(-5%);
+    }
+
+    &__line {
+        position: absolute;
+        left: -20vw;
+        right: -20vw;
+        top: -20vw;
+        width: 140%;
+        z-index: 0;
+    }
+
+
+    &__paragraph {
+        color: var(--color-main);
+        font-size: var(--size-xs);
+        width: 80%;
+    }
+
+    &__background {
+        border-radius: 50px;
+        background-color: var(--color-main);
+        position: absolute;
+        left: 50%;
+
+        top: 0;
+        width: 75%;
+        aspect-ratio: 1;
+        z-index: 0;
+        transform: rotate(-15deg) translateX(-50%);
+
+        &::before {
+            content: '';
+            border-radius: 50px;
+            background-color: var(--color-grey);
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 100%;
+            aspect-ratio: 1;
+            z-index: 0;
+            transform: rotate(-15deg);
+
+        }
+    }
+
+    &__image {
+        position: absolute;
+        right: -7vw;
+        width: 50vw;
+        bottom: 0;
+    }
+
+}

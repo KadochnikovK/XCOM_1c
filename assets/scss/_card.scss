@@ -1,0 +1,46 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: var(--color-grey);
+    aspect-ratio: 1;
+    padding: var(--size-sm);
+    color: var(--color-main);
+
+    @include xs {
+        aspect-ratio: auto;
+    }
+
+    &--image {
+        background: var(--image-url);
+        background-size: cover;
+        color: var(--color-bright);
+
+        .card__number {
+            color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: 2px var(--color-bright);
+            text-stroke: 2px #000;
+        }
+    }
+
+    &--color {
+        background-color: var(--color-main);
+        color: var(--color-bright);
+    }
+
+
+    &__number {
+        font-size: 108px;
+        font-weight: 800;
+        line-height: 1;
+        margin-left: auto;
+    }
+
+    &__text {
+        margin-top: auto;
+
+        @include xs {
+            padding-top: 100pxs;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.video {
+    margin-top: 0;
+
+    &__content {
+        border-radius: 25px;
+        padding: var(--size-sm);
+        height: 400px;
+        background-color: var(--color-main);
+    }
+
+    &__headline {
+        color: var(--color-bright);
+    }
+}
