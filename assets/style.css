@@ -120,6 +120,16 @@ li {
   line-height: 1;
   padding-top: var(--size-md);
   padding-bottom: var(--size-xs);
+  overflow-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+@media (min-width: 768px) {
+  .headline {
+    -webkit-hyphens: none;
+            hyphens: none;
+  }
 }
 
 .paragraph {
@@ -286,10 +296,16 @@ button {
   color: var(--color-main);
   width: 100%;
 }
+.button--primary svg {
+  display: none;
+}
 @media (min-width: 768px) {
   .button--primary {
     width: -moz-max-content;
     width: max-content;
+  }
+  .button--primary svg {
+    display: block;
   }
 }
 .button--primary:hover {

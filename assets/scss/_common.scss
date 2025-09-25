@@ -32,6 +32,13 @@ li {
     line-height: 1;
     padding-top: var(--size-md);
     padding-bottom: var(--size-xs);
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+
+    @include sm {
+        hyphens: none;
+    }
 }
 
 .paragraph {
