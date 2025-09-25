@@ -135,7 +135,7 @@
     &__social {
         display: flex;
         flex-direction: column;
-        margin-top: var(--size-sml);
+        margin-top: var(--size-sm);
         gap: var(--size-sm);
 
         @media (min-width: 1200px) {
