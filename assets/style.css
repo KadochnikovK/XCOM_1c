@@ -686,7 +686,8 @@ button {
 }
 @media (min-width: 480px) {
   .card__text {
-    font-size: var(--size-md);
+    padding-top: 100px;
+    font-size: var(--size-sm);
   }
 }
 
@@ -1146,4 +1147,4 @@ button {
   width: max-content;
   background-color: var(--color-grey);
   cursor: pointer;
-}/*# sourceMappingURL=style.css.map */
+}
