@@ -10,7 +10,7 @@
     width: 100%;
 
     @include xs {
-        aspect-ratio: .5;
+        aspect-ratio: 0.5;
     }
 
     @include md {
@@ -34,11 +34,10 @@
         color: var(--color-bright);
     }
 
-
     &__number {
         font-size: var(--size-xxxl);
         font-weight: 800;
-        line-height: .8;
+        line-height: 0.8;
         margin-left: auto;
     }
 
@@ -47,8 +46,8 @@
         margin-top: auto;
 
         @include xs {
-            // padding-top: 100px;
-            font-size: var(--size-md);
+            padding-top: 100px;
+            font-size: var(--size-sm);
         }
     }
 }
