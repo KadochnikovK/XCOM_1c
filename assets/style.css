@@ -635,6 +635,7 @@ button {
   .speaker__image {
     bottom: 6%;
     right: -3vw;
+    left: 52vw;
   }
 }
 
