@@ -30,6 +30,11 @@
             top: auto;
             bottom: 0;
             width: 45%;
+
+            @include xl {
+                width: 47%;
+                bottom: -3%;
+            }
         }
 
         &--top {
@@ -93,7 +98,7 @@
         position: absolute;
         right: -7vw;
         width: 50vw;
-        max-width: 700px;
+        max-width: 800px;
         bottom: 0;
 
         @include lg {
@@ -102,7 +107,7 @@
         }
 
         @include xl {
-            bottom: 8.5%;
+            bottom: 6%;
             right: -3vw;
         }
     }
