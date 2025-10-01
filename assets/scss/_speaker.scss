@@ -16,11 +16,11 @@
         max-width: 1200px;
 
         @include xl {
-            padding: 0 clamp(1px, 15vw, 300px) 0 20vw;
+            padding: 0 clamp(1px, 15vw, 400px) 0 20vw;
         }
 
         @include xxl {
-            padding: 0 clamp(1px, 15vw, 100px) 0 20vw;
+            padding: 0 clamp(1px, 15vw, 100px) 0 19vw;
         }
 
 
