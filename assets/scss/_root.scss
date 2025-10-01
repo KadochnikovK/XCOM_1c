@@ -4,15 +4,16 @@
     --color-grey: #e4e4e4;
     --color-bright: #fff;
     --color-dark: #000;
-    --color-red: #B41313;
+    --color-red: #b41313;
 
     // sizes
-    --size-xxxs: calc((1vw + 1vh) * .6);
-    --size-xs: calc((1vw + 1vh) * .8);
-    --size-sm: calc((1vw + 1vh) * 1);
-    --size-md: calc((1vw + 1vh) * 1.2);
-    --size-lg: calc((1vw + 1vh) * 2);
-    --size-xl: calc((1vw + 1vh) * 3);
-    --size-xxl: calc((1vw + 1vh) * 5);
-    --size-xxxl: calc((1vw + 1vh) * 10);
+
+    --size-xxxs: clamp(8px, calc((1vw + 1vh) * 0.6), 12px);
+    --size-xs: clamp(12px, calc((1vw + 1vh) * 0.8), 16px);
+    --size-sm: clamp(16px, calc((1vw + 1vh) * 1), 20px);
+    --size-md: clamp(20px, calc((1vw + 1vh) * 1.2), 24px);
+    --size-lg: clamp(24px, calc((1vw + 1vh) * 2), 32px);
+    --size-xl: clamp(32px, calc((1vw + 1vh) * 3), 48px);
+    --size-xxl: clamp(48px, calc((1vw + 1vh) * 5), 80px);
+    --size-xxxl: clamp(64px, calc((1vw + 1vh) * 10), 120px);
 }
