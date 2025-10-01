@@ -550,6 +550,11 @@ button {
 .speaker {
   position: relative;
 }
+@media (min-width: 2500px) {
+  .speaker {
+    transform: translateX(20%);
+  }
+}
 .speaker__content {
   position: relative;
   display: flex;
@@ -572,30 +577,45 @@ button {
 }
 .speaker__line {
   position: absolute;
-  width: 100%;
+  width: 150%;
   top: -10vw;
   z-index: 0;
   max-width: 2000px;
 }
 .speaker__line--bottom {
-  left: 55%;
+  left: 56%;
   top: auto;
-  bottom: 5%;
-  width: 100%;
+  bottom: -4%;
+}
+@media (min-width: 1440px) {
+  .speaker__line--bottom {
+    bottom: -0.5%;
+  }
 }
 @media (min-width: 1920px) {
   .speaker__line--bottom {
+    width: 100%;
     left: 1000px;
   }
 }
+@media (min-width: 2500px) {
+  .speaker__line--bottom {
+    left: calc(1000px + 5vw);
+  }
+}
 .speaker__line--top {
-  left: -50%;
+  left: -80%;
   top: -20%;
   bottom: auto;
-  width: 100%;
+}
+@media (min-width: 1440px) {
+  .speaker__line--top {
+    left: -70%;
+  }
 }
 @media (min-width: 1920px) {
   .speaker__line--top {
+    width: 100%;
     left: -1200px;
     top: -400px;
   }
@@ -650,15 +670,27 @@ button {
 }
 @media (min-width: 1224px) {
   .speaker__image {
-    bottom: 7%;
-    right: -3vw;
+    bottom: 2%;
+    right: -7.5vw;
   }
 }
 @media (min-width: 1440px) {
   .speaker__image {
-    bottom: 6%;
-    right: -3vw;
-    left: 52vw;
+    bottom: 7%;
+    right: -5vw;
+    left: 53vw;
+  }
+}
+@media (min-width: 1920px) {
+  .speaker__image {
+    bottom: 7%;
+    left: 950px;
+  }
+}
+@media (min-width: 2500px) {
+  .speaker__image {
+    bottom: 9%;
+    left: calc(1000px + 4vw);
   }
 }
 
@@ -1170,4 +1202,4 @@ button {
   width: max-content;
   background-color: var(--color-grey);
   cursor: pointer;
-}
+}/*# sourceMappingURL=style.css.map */

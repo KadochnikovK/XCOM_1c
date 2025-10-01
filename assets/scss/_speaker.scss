@@ -1,6 +1,10 @@
 .speaker {
     position: relative;
 
+    @include xxxl {
+        transform: translateX(20%);
+    }
+
     &__content {
         position: relative;
         display: flex;
@@ -16,47 +20,60 @@
         }
 
         @include xxl {
-            padding: 0 clamp(1px, 15vw,100px)  0 20vw;
+            padding: 0 clamp(1px, 15vw, 100px) 0 20vw;
         }
+
+
     }
 
     &__line {
         position: absolute;
         // left: -20vw;
         // right: -20vw;
-        width: 100%;
+        width: 150%;
         top: -10vw;
         // width: 400px;
         z-index: 0;
         max-width: 2000px;
 
         &--bottom {
-            left: 55%;
+            left: 56%;
             // right: 0;
             top: auto;
-            bottom: 5%;
-            width: 100%;
+            bottom: -4%;
+            // width: 100%;
 
             @include xl {
+
                 // width: 100%;
                 // bottom: -3%;
-
+                bottom: -.5%;
                 // right: auto;
             }
 
             @include xxl {
-                left: 1000px;
+                width: 100%;
+                left: calc(1000px);
+            }
+
+            @include xxxl {
+                left: calc(1000px + 5vw);
             }
         }
 
         &--top {
             // left: 0;
-            left: -50%;
+            left: -80%;
             top: -20%;
             bottom: auto;
-            width: 100%;
+
+            // width: 100%;
+            @include xl {
+                left: -70%;
+            }
 
             @include xxl {
+                width: 100%;
                 left: -1200px;
                 top: -400px;
             }
@@ -114,14 +131,24 @@
         bottom: 0;
 
         @include lg {
-            bottom: 7%;
-            right: -3vw;
+            bottom: 2%;
+            right: -7.5vw;
         }
 
         @include xl {
-            bottom: 6%;
-            right: -3vw;
-            left: 52vw;
+            bottom: 7%;
+            right: -5vw;
+            left: 53vw;
+        }
+
+        @include xxl {
+            bottom: 7%;
+            left: calc(950px);
+        }
+
+        @include xxxl {
+            bottom: 9%;
+            left: calc(1000px + 4vw);
         }
     }
 }
